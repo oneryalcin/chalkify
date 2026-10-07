@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "chalkify": {
+      "type": "http",
+      "url": "${CHALKIFY_MCP_URL:-https://video.pagespatial.dev/mcp}",
+      "headers": {"Authorization": "Bearer ${CHALKIFY_API_KEY}"}
+    }
+  }
+}

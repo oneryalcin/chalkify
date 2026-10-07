@@ -1,0 +1,16 @@
+{
+  "name": "chalkify",
+  "owner": {
+    "name": "Oner Yalcin"
+  },
+  "plugins": [
+    {
+      "name": "chalkify",
+      "source": "./",
+      "description": "Turn any question into a narrated, animated explanation you watch in your browser while Claude writes it."
+    }
+  ],
+  "metadata": {
+    "description": "Chalkify: narrated, animated explanations of any topic, created from Claude Code."
+  }
+}
