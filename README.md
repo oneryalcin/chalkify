@@ -35,13 +35,15 @@ needs reopening. Set the key, then restart Claude Code.
 /chalkify:explain how a hash table finds a key
 ```
 
-Or just ask Claude to explain something visually. Claude shows a private link first; open it and the explanation
+Or just ask Claude to explain something visually. Claude shows your link first; open it and the explanation
 plays as each part is ready. Ask Claude to share it to get a separate link you can send to anyone, and to revoke that
 link when you want.
 
 ## Good to know
 
-- **Private by default.** Only people with the link can watch. A share link is separate and can be revoked.
+- **Links are secret, not private.** Anyone who has a link can watch, without signing in, and nobody can guess one.
+  Keep the first link Claude gives you to yourself: it can't be withdrawn. To show other people, ask Claude to share
+  the explanation; that gives a separate link you can revoke at any time.
 - **Limits in the alpha.** Each explanation runs up to 3 minutes; each person gets 5 hours of narration a month.
   When narration runs out, explanations still play, with captions.
 - **Audio is kept for 3 months after the last view.** After that the explanation still plays, with captions.
