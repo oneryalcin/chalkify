@@ -24,6 +24,11 @@ Chalkify is in private alpha. It runs on a hosted service and needs an invite ke
 
 Nothing else is needed: no checkout, no local server, no voice model.
 
+If Claude says the chalkify server failed to connect with "No invite key", Claude Code was started without
+`CHALKIFY_API_KEY`. Shell config is only read by terminals: the Claude desktop app and IDE extensions (VS Code,
+JetBrains) don't see it unless you start them from a terminal that has it, and a terminal opened before you set the key
+needs reopening. Set the key, then restart Claude Code.
+
 ## Use
 
 ```
