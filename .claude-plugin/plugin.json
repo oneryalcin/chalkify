@@ -1,8 +1,8 @@
 {
-  "name": "chalkify",
-  "version": "0.2.0",
+  "name": "elucify",
+  "version": "0.3.0",
   "description": "Turn any question into a narrated, animated explanation you watch in your browser while Claude writes it.",
   "author": {"name": "Oner Yalcin"},
-  "homepage": "https://github.com/oneryalcin/chalkify",
-  "repository": "https://github.com/oneryalcin/chalkify"
+  "homepage": "https://github.com/oneryalcin/elucify",
+  "repository": "https://github.com/oneryalcin/elucify"
 }

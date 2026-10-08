@@ -1,28 +1,28 @@
-# Chalkify
+# Elucify
 
 Ask Claude Code to explain anything, and watch the explanation build itself in your browser: a narrated, animated
 walkthrough with diagrams, tables, graphs and code, playing while Claude is still writing it. Share it with a link.
 
-Chalkify is in early alpha. It runs on a hosted service; you sign in with one click, no account needed.
+Elucify is in early alpha. It runs on a hosted service; you sign in with one click, no account needed.
 
 ## Install
 
 ```
-/plugin marketplace add oneryalcin/chalkify
-/plugin install chalkify@chalkify
+/plugin marketplace add oneryalcin/elucify
+/plugin install elucify@elucify
 ```
 
-Then sign in once: run `/mcp`, choose **chalkify** and **Authenticate**. A browser page opens; press **Continue**.
+Then sign in once: run `/mcp`, choose **elucify** and **Authenticate**. A browser page opens; press **Continue**.
 Claude Code keeps the sign-in, in the terminal, the desktop app and IDE extensions alike.
 
 Nothing else is needed: no key, no checkout, no local server, no voice model.
 
-If Claude says chalkify needs authentication, or the sign-in expired, run `/mcp` and Authenticate again.
+If Claude says elucify needs authentication, or the sign-in expired, run `/mcp` and Authenticate again.
 
 ## Use
 
 ```
-/chalkify:explain how a hash table finds a key
+/elucify:explain how a hash table finds a key
 ```
 
 Or just ask Claude to explain something visually. Claude shows your link first; open it and the explanation
@@ -40,8 +40,14 @@ link when you want. A finished explanation has an **Export video** button (Chrom
 - **Signing in again** (for example after `/mcp` → Authenticate) starts a new, separate sign-in: explanations made
   before still play from their links, but Claude can't add to them.
 
-## Alpha testers with an invite key
+## Coming from Chalkify
 
-Version 0.2 signs in instead of using `CHALKIFY_API_KEY`. Update with `/plugin update chalkify`, then run
-`/reload-plugins` (or restart Claude Code) and sign in as above. Until the plugins reload you may see one
-"Server rejected the configured Authorization header" message from the old version; it goes away. Explanations you made with your key still play from their links.
+Elucify was called Chalkify until 2026-10-08. Remove the old plugin and install this one, then sign in once:
+
+```
+/plugin uninstall chalkify@chalkify
+/plugin marketplace add oneryalcin/elucify
+/plugin install elucify@elucify
+```
+
+Explanations made before the rename were on the old address and no longer open.

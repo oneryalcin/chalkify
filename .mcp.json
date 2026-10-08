@@ -1,8 +1,8 @@
 {
   "mcpServers": {
-    "chalkify": {
+    "elucify": {
       "type": "http",
-      "url": "${CHALKIFY_MCP_URL:-https://video.pagespatial.dev/mcp}"
+      "url": "${ELUCIFY_MCP_URL:-https://elucify.dev/mcp}"
     }
   }
 }
