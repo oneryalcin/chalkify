@@ -42,5 +42,6 @@ link when you want. A finished explanation has an **Export video** button (Chrom
 
 ## Alpha testers with an invite key
 
-Version 0.2 signs in instead of using `CHALKIFY_API_KEY`. Update with `/plugin update chalkify`, then sign in as
-above. Explanations you made with your key still play from their links.
+Version 0.2 signs in instead of using `CHALKIFY_API_KEY`. Update with `/plugin update chalkify`, then run
+`/reload-plugins` (or restart Claude Code) and sign in as above. Until the plugins reload you may see one
+"Server rejected the configured Authorization header" message from the old version; it goes away. Explanations you made with your key still play from their links.
