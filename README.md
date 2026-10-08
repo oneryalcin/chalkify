@@ -3,31 +3,21 @@
 Ask Claude Code to explain anything, and watch the explanation build itself in your browser: a narrated, animated
 walkthrough with diagrams, tables, graphs and code, playing while Claude is still writing it. Share it with a link.
 
-Chalkify is in private alpha. It runs on a hosted service and needs an invite key.
+Chalkify is in early alpha. It runs on a hosted service; you sign in with one click, no account needed.
 
 ## Install
 
-1. Put your invite key in your shell's environment, for example in `~/.zshrc`:
+```
+/plugin marketplace add oneryalcin/chalkify
+/plugin install chalkify@chalkify
+```
 
-   ```sh
-   export CHALKIFY_API_KEY=lg_...
-   ```
+Then sign in once: run `/mcp`, choose **chalkify** and **Authenticate**. A browser page opens; press **Continue**.
+Claude Code keeps the sign-in, in the terminal, the desktop app and IDE extensions alike.
 
-   For fish: `set -gx CHALKIFY_API_KEY lg_...` in `~/.config/fish/config.fish`.
+Nothing else is needed: no key, no checkout, no local server, no voice model.
 
-2. Restart Claude Code, then install the plugin:
-
-   ```
-   /plugin marketplace add oneryalcin/chalkify
-   /plugin install chalkify@chalkify
-   ```
-
-Nothing else is needed: no checkout, no local server, no voice model.
-
-If Claude says the chalkify server failed to connect with "No invite key", Claude Code was started without
-`CHALKIFY_API_KEY`. Shell config is only read by terminals: the Claude desktop app and IDE extensions (VS Code,
-JetBrains) don't see it unless you start them from a terminal that has it, and a terminal opened before you set the key
-needs reopening. Set the key, then restart Claude Code.
+If Claude says chalkify needs authentication, or the sign-in expired, run `/mcp` and Authenticate again.
 
 ## Use
 
@@ -37,14 +27,20 @@ needs reopening. Set the key, then restart Claude Code.
 
 Or just ask Claude to explain something visually. Claude shows your link first; open it and the explanation
 plays as each part is ready. Ask Claude to share it to get a separate link you can send to anyone, and to revoke that
-link when you want.
+link when you want. A finished explanation has an **Export video** button (Chrome) that downloads an MP4.
 
 ## Good to know
 
 - **Links are secret, not private.** Anyone who has a link can watch, without signing in, and nobody can guess one.
   Keep the first link Claude gives you to yourself: it can't be withdrawn. To show other people, ask Claude to share
   the explanation; that gives a separate link you can revoke at any time.
-- **Limits in the alpha.** Each explanation runs up to 3 minutes; each person gets 5 hours of narration a month.
-  When narration runs out, explanations still play, with captions.
-- **Audio is kept for 3 months after the last view.** After that the explanation still plays, with captions.
-- Your invite key is a password: keep it out of chats, issues and repositories.
+- **Limits in the alpha.** Each explanation runs up to 3 minutes, and a one-click sign-in includes 10 minutes of
+  narration a month. When narration runs out, explanations still play, with captions.
+- **Audio is kept for 30 days after the last view.** After that the explanation still plays, with captions.
+- **Signing in again** (for example after `/mcp` → Authenticate) starts a new, separate sign-in: explanations made
+  before still play from their links, but Claude can't add to them.
+
+## Alpha testers with an invite key
+
+Version 0.2 signs in instead of using `CHALKIFY_API_KEY`. Update with `/plugin update chalkify`, then sign in as
+above. Explanations you made with your key still play from their links.

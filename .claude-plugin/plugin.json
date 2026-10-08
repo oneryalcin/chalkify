@@ -1,6 +1,6 @@
 {
   "name": "chalkify",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Turn any question into a narrated, animated explanation you watch in your browser while Claude writes it.",
   "author": {"name": "Oner Yalcin"},
   "homepage": "https://github.com/oneryalcin/chalkify",
