@@ -12,4 +12,4 @@ Create a narrated visual explanation of $ARGUMENTS with the elucify MCP tools. W
 
 The first link is secret, not private: anyone who has it can watch, and it can't be withdrawn, so tell the user to keep it to themselves. If they want others to watch, call `share_explanation` and give them that link instead; `revoke_share` withdraws it.
 
-If the tools are missing or the connection is refused, tell the user to sign in: run `/mcp`, choose elucify and Authenticate (one click in the browser, no account), then ask again. Do not substitute a text answer.
+If the tools are missing or the connection is refused, tell the user to sign in: run `/mcp`, choose elucify and Authenticate (in the browser, Continue with Google, or without an account), then ask again. Signed in with Google, they can manage their explanations at https://elucify.dev/account. Do not substitute a text answer.
